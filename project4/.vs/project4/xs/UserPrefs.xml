@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{B4E2301A-95EA-4BF6-B889-A8AE96009F9A}|Default">
+  <MonoDevelop.Ide.ItemProperties.project4 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Products.cs">
+    <Files>
+      <File FileName="Models/ProductsContext.cs" Line="13" Column="158" />
+      <File FileName="Models/DataBaseContext.cs" Line="14" Column="1" />
+      <File FileName="Startup.cs" Line="37" Column="10" />
+      <File FileName="Program.cs" Line="14" Column="6" />
+      <File FileName="Controllers/ProductsController.cs" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="appsettings.json" />
+      <File FileName="Models/Products.cs" Line="6" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="project4" expanded="True">
+            <Node name="project4" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Products.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
