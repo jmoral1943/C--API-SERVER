@@ -5,13 +5,23 @@ import axios from "axios";
 
 class App extends React.Component {
   state = {
-    products: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    products: [],
   };
+
+  componentDidMount() {
+    this.fetchProducts();
+    console.log('componentDidMount')
+  }
+
+  componentDidUpdate() {
+    this.fetchById();
+  }
 
   fetchProducts = () => {
     axios.get("/api/Products").then(res => {
       console.log('mounted get products')
       this.setState({ products: res.data.products });
+
     });
   };
 
@@ -61,14 +71,7 @@ class App extends React.Component {
     event.preventDefault();
   }
 
-  componentDidMount() {
-    this.fetchProducts();
-    console.log('componentDidMount')
-  }
-
-  componentDidUpdate() {
-    this.fetchById();
-  }
+ 
 
   render() {
     return (

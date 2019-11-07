@@ -3,9 +3,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Models/Products.cs">
     <Files>
       <File FileName="Models/ProductsContext.cs" Line="13" Column="158" />
-      <File FileName="Models/DataBaseContext.cs" Line="14" Column="1" />
-      <File FileName="Startup.cs" Line="37" Column="10" />
-      <File FileName="Program.cs" Line="14" Column="6" />
+      <File FileName="Models/DataBaseContext.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="Program.cs" />
       <File FileName="Controllers/ProductsController.cs" />
       <File FileName="appsettings.Development.json" />
       <File FileName="appsettings.json" />
