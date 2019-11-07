@@ -1,23 +1,28 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-
-const Product = ({ product, price, about, url, category }) => {
+const Product = ({ ProductName, Id, ProductDesc, Img, ProductType }) => {
   return (
     <div className="product-card">
-         <button type='button' onClick={(event) => this.handlePost(event)}>Add</button>
+      <button type="button" onClick={event => this.handlePost(event)}>
+        Add
+      </button>
       <div className="product-card--img">
-        <img src={url} alt='product pic' />
+        <img src={Img} alt="product pic" />
       </div>
       <div className="product-card--content">
-        <strong>{product}</strong>
-        <p> {about}</p>
+        <strong>{ProductName}</strong>
+        <p> {ProductDesc}</p>
       </div>
       <div className="product-card--meta">
-        <strong>${price}</strong>
-        <p>{category}</p>
-        <button type='submit'>edit</button>
-        <button type='submit'>delete</button>
+        <strong>${Id}</strong>
+        <p>{ProductType}</p>
+        <button type="button" onClick={event => this.handlePut(event)}>
+          edit
+        </button>
+        <button type="button" onClick={event => this.handleDelete(event)}>
+          delete
+        </button>
       </div>
     </div>
   );
