@@ -10,7 +10,8 @@ class App extends React.Component {
 
   fetchProducts = () => {
     axios.get("/api/Products").then(res => {
-      this.setState({ products: res.data });
+      console.log('mounted get products')
+      this.setState({ products: res.data.products });
     });
   };
 
@@ -51,6 +52,7 @@ class App extends React.Component {
     axios
       .delete("api/Products/:id")
       .then(res => {
+        console.log('delete')
         this.setState({ products: res.data });
       })
       .catch(err => {
@@ -61,6 +63,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.fetchProducts();
+    console.log('componentDidMount')
   }
 
   componentDidUpdate() {

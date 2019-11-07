@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/LucyYang/Documents/project4/project4.csproj": {}
+    "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj": {}
   },
   "projects": {
-    "/Users/LucyYang/Documents/project4/project4.csproj": {
+    "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/LucyYang/Documents/project4/project4.csproj",
+        "projectUniqueName": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
         "projectName": "project4",
-        "projectPath": "/Users/LucyYang/Documents/project4/project4.csproj",
-        "packagesPath": "/Users/LucyYang/.nuget/packages/",
-        "outputPath": "/Users/LucyYang/Documents/project4/obj/",
+        "projectPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
+        "packagesPath": "/Users/jonathangiler/.nuget/packages/",
+        "outputPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/LucyYang/.nuget/NuGet/NuGet.Config"
+          "/Users/jonathangiler/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
