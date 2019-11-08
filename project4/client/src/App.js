@@ -1,88 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Product from "./components/Product";
 import axios from "axios";
 
-class App extends React.Component {
-  state = {
-    products: [],
-  };
 
-  componentDidMount() {
-    this.fetchProducts();
-    console.log("componentDidMount");
+
+
+const App = () => {
+  const [products, setProducts] = useState([])
+
+
+  const getProducts = async () => {
+    try {
+      const res = await fetch("api/products");
+      const text = await res.text();
+      const response = text.length ? JSON.parse(text) : {}
+      setProducts(response)
+
+    }
+    catch (error) {
+      throw error;
+    }
   }
 
-  componentDidUpdate() {
-    // this.fetchById();
-  }
+  useEffect(() => {
+    getProducts()
+  }, [])
 
-  fetchProducts = () => {
-    axios
-      .get("/api/Products")
-      .then(res => {
-        console.log("mounted get products");
-        console.log(res.data);
-        this.setState({ products: res.data });
-      })
-      .catch(err => console.log(err));
-  };
+  return (
+    <React.Fragment>
+      {products && products.map((product, index) => (
 
-  // fetchById = () => {
-  //   axios.get("/api/Products/:id").then(res => {
-  //     this.setState({ products: res.data });
-  //   });
-  // };
-
-  handlePost(event) {
-    alert("successfully added new product");
-    axios
-      .post("/api/Products")
-      .then(res => {
-        this.setState({ products: res.data });
-      })
-      .catch(err => {
-        console.log(err);
-      });
-    event.preventDefault();
-  }
-
-  handlePut(event) {
-    alert("update your product info");
-    axios
-      .put("/api/Products/:id")
-      .then(res => {
-        this.setState({ products: res.data });
-      })
-      .catch(err => {
-        console.log(err);
-      });
-    event.preventDefault();
-  }
-
-  handleDelete(event) {
-    alert("deleted a product");
-    axios
-      .delete("api/Products/:id")
-      .then(res => {
-        console.log("delete");
-        this.setState({ products: res.data });
-      })
-      .catch(err => {
-        console.log(err);
-      });
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        {this.state.products.map((product, index) => (
+        <div>
           <Product key={index} {...product} />
-        ))}
-      </React.Fragment>
-    );
-  }
+          <h2>{product.productName}</h2>
+        </div>
+      ))}
+    </React.Fragment>
+  )
 }
 
 export default App;
+
+
