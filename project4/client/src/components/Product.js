@@ -1,12 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Product = ({ ProductName, Id, ProductDesc, Img, ProductType }) => {
+const Product = ({ ProductName, ProductDesc, Img, ProductType }) => {
   return (
     <div className="product-card">
-      <button type="button" onClick={event => this.handlePost(event)}>
-        Add
-      </button>
       <div className="product-card--img">
         <img src={Img} alt="product pic" />
       </div>
@@ -15,7 +12,6 @@ const Product = ({ ProductName, Id, ProductDesc, Img, ProductType }) => {
         <p> {ProductDesc}</p>
       </div>
       <div className="product-card--meta">
-        <strong>${Id}</strong>
         <p>{ProductType}</p>
         <button type="button" onClick={event => this.handlePut(event)}>
           edit

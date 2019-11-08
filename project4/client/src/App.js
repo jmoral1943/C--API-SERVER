@@ -104,17 +104,33 @@ const App = () => {
     }
   }
 
+  const getId = async () => {
+    try {
+      const res = await fetch("api/products/:id");
+      const text = await res.text();
+      const response = text.length ? JSON.parse(text) : {}
+      setProducts(response)
+
+    }
+    catch (error) {
+      throw error;
+    }
+  }
+
+
   useEffect(() => {
     getProducts()
   }, [])
 
   return (
     <React.Fragment>
-      {products && products.map((product, index) => (
+      <button type="button">
+        Add
+      </button>
+      {products && products.map((product) => (
 
         <div>
-          <Product key={index} {...product} />
-          <h2>{product.productName}</h2>
+          <Product key={product.Id} ProductName={product.productName} ProductDesc={product.productDesc} Img={product.img} ProductType={product.ProductType} />
         </div>
       ))}
     </React.Fragment>
