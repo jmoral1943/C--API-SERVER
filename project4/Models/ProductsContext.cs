@@ -10,6 +10,6 @@ namespace project4.Models
         public ProductsContext(DbContextOptions<ProductsContext> options) : base(options)
         { }
         public DbSet<Products> Products { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { optionsBuilder.UseMySql("Server=localhost;Port=3306;Database=project4;User=root;Password=password;"); }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { optionsBuilder.UseMySql("Server=localhost;Port=3306;Database=project4;User=root;Password=password;Connection Timeout=0;Default Command Timeout=0;"); }
     }
 }

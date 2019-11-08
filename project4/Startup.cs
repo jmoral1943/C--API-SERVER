@@ -27,7 +27,7 @@ namespace project4
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connection = "Server=localhost;Port=3306;Database=project4;User=root;Password=password;";
+            string connection = "Server=localhost;Port=3306;Database=project4;User=root;Password=password;Connection Timeout=0;Default Command Timeout=0;";
             services.AddDbContextPool<DataBaseContext>(option => option.UseMySql(connection));
             services.AddControllers();
         }
