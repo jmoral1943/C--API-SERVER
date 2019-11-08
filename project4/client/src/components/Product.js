@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Product = ({ ProductName, Id, ProductDesc, Img, ProductType }) => {
+const Product = ({ productName, id, productDesc, Img, productType }) => {
   return (
     <div className="product-card">
       <button type="button" onClick={event => this.handlePost(event)}>
@@ -11,12 +11,12 @@ const Product = ({ ProductName, Id, ProductDesc, Img, ProductType }) => {
         <img src={Img} alt="product pic" />
       </div>
       <div className="product-card--content">
-        <strong>{ProductName}</strong>
-        <p> {ProductDesc}</p>
+        <strong>{productName}</strong>
+        <p> {productDesc}</p>
       </div>
       <div className="product-card--meta">
-        <strong>${Id}</strong>
-        <p>{ProductType}</p>
+        <strong>${id}</strong>
+        <p>{productType}</p>
         <button type="button" onClick={event => this.handlePut(event)}>
           edit
         </button>
