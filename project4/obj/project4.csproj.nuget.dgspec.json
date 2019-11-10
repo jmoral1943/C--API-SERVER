@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj": {}
+    "/Users/sabrinastevens/Documents/cSharpAPIChallenge/C-Sharp-API-SERVER/project4/project4.csproj": {}
   },
   "projects": {
-    "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj": {
+    "/Users/sabrinastevens/Documents/cSharpAPIChallenge/C-Sharp-API-SERVER/project4/project4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
+        "projectUniqueName": "/Users/sabrinastevens/Documents/cSharpAPIChallenge/C-Sharp-API-SERVER/project4/project4.csproj",
         "projectName": "project4",
-        "projectPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
-        "packagesPath": "/Users/jonathangiler/.nuget/packages/",
-        "outputPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/obj/",
+        "projectPath": "/Users/sabrinastevens/Documents/cSharpAPIChallenge/C-Sharp-API-SERVER/project4/project4.csproj",
+        "packagesPath": "/Users/sabrinastevens/.nuget/packages/",
+        "outputPath": "/Users/sabrinastevens/Documents/cSharpAPIChallenge/C-Sharp-API-SERVER/project4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jonathangiler/.nuget/NuGet/NuGet.Config"
+          "/Users/sabrinastevens/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

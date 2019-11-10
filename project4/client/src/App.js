@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Product from "./components/Product";
+import EditProducts from './components/EditProducts'
 import axios from "axios";
+import { BrowserRouter, Route } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
@@ -23,20 +26,36 @@ const App = () => {
     }
   }
 
+  const getProductId = async () => {
+
+  }
+
+  const handlePut = async (id, data) => {
+      fetch(`api/products/${id}`, {
+        method: "PUT",
+        body: data
+      })
+  }
+
   useEffect(() => {
     getProducts()
   }, [])
 
   return (
-    <React.Fragment>
-      {products && products.map((product, index) => (
+    <div className="container">
+      <button className="btn btn-info pl-4 pr-4 mb-2 mt-2" type="button" onClick={event => this.handlePost(event)}>
+        Add
+      </button>
 
-        <div>
+      <div className="row">
+      {products && products.map((product, index) => (
           <Product key={index} {...product} />
-          <h2>{product.productName}</h2>
-        </div>
       ))}
-    </React.Fragment>
+      </div>
+      <BrowserRouter>
+        <Route path="/edit/:id" render={props => <EditProducts {...props} />} />
+      </BrowserRouter>
+    </div>
   )
 }
 

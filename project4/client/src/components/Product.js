@@ -1,26 +1,24 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import { NavLink, Router } from 'react-router-dom';
+
 
 const Product = ({ productName, id, productDesc, Img, productType }) => {
+
+  console.log(Img)
   return (
-    <div className="product-card">
-      <button type="button" onClick={event => this.handlePost(event)}>
-        Add
-      </button>
-      <div className="product-card--img">
-        <img src={Img} alt="product pic" />
+    <div className="card text-center ml-3 mr-2 mb-4 pl-2 pr-2 pb-2 pt-2 col-sm-12 col-md-4 col-lg-3">
+        <img src={Img} alt="product image" className="card-img img" />
+      <div>
+        <h2 className="card-title">{productName}</h2>
+        <p className="card-subtitle">{productDesc}</p>
       </div>
-      <div className="product-card--content">
-        <strong>{productName}</strong>
-        <p> {productDesc}</p>
-      </div>
-      <div className="product-card--meta">
-        <strong>${id}</strong>
+      <div>
+        <p className="font-weight-bold card-text">${id}</p>
         <p>{productType}</p>
-        <button type="button" onClick={event => this.handlePut(event)}>
+        {/* {<NavLink to={`/edit/${id}`}><button className="btn btn-info mr-1 pl-4 pr-4" type="button">
           edit
-        </button>
-        <button type="button" onClick={event => this.handleDelete(event)}>
+        </button></NavLink>} */}
+        <button className="btn btn-info" type="button" onClick={event => this.handleDelete(event)}>
           delete
         </button>
       </div>
