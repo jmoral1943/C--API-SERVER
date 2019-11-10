@@ -42,6 +42,7 @@ const App = () => {
   }, [])
 
   return (
+    <BrowserRouter>
     <div className="container">
       <button className="btn btn-info pl-4 pr-4 mb-2 mt-2" type="button" onClick={event => this.handlePost(event)}>
         Add
@@ -52,10 +53,10 @@ const App = () => {
           <Product key={index} {...product} />
       ))}
       </div>
-      <BrowserRouter>
+      
         <Route path="/edit/:id" render={props => <EditProducts {...props} />} />
-      </BrowserRouter>
     </div>
+    </BrowserRouter>
   )
 }
 

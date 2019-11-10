@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Router } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 
 const Product = ({ productName, id, productDesc, Img, productType }) => {
@@ -15,11 +15,11 @@ const Product = ({ productName, id, productDesc, Img, productType }) => {
       <div>
         <p className="font-weight-bold card-text">${id}</p>
         <p>{productType}</p>
-        {/* {<NavLink to={`/edit/${id}`}><button className="btn btn-info mr-1 pl-4 pr-4" type="button">
-          edit
-        </button></NavLink>} */}
+        {<Link to={`/edit/${id}`}><button className="btn btn-info mr-1 pl-4 pr-4" type="button">
+          EDIT
+        </button></Link>}
         <button className="btn btn-info" type="button" onClick={event => this.handleDelete(event)}>
-          delete
+          DELETE
         </button>
       </div>
     </div>
