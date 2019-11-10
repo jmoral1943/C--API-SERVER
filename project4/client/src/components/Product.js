@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Product = ({ productName, id, productDesc, Img, productType }) => {
+const Product = ({ productName, id, productDesc, Img, productType, handleDelete }) => {
   return (
     <div className="product-card">
       <button type="button" onClick={event => this.handlePost(event)}>
@@ -20,7 +20,7 @@ const Product = ({ productName, id, productDesc, Img, productType }) => {
         <button type="button" onClick={event => this.handlePut(event)}>
           edit
         </button>
-        <button type="button" onClick={event => this.handleDelete(event)}>
+        <button type="button" onClick={() => handleDelete(id)}>
           delete
         </button>
       </div>

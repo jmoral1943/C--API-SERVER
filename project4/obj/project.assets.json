@@ -8389,19 +8389,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jonathangiler/.nuget/packages/": {}
+    "/Users/aaliyahmccray/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
+      "projectUniqueName": "/Users/aaliyahmccray/Documents/C-Sharp-API-SERVER/project4/project4.csproj",
       "projectName": "project4",
-      "projectPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/project4.csproj",
-      "packagesPath": "/Users/jonathangiler/.nuget/packages/",
-      "outputPath": "/Users/jonathangiler/Documents/admin/C-Sharp-API-SERVER/project4/obj/",
+      "projectPath": "/Users/aaliyahmccray/Documents/C-Sharp-API-SERVER/project4/project4.csproj",
+      "packagesPath": "/Users/aaliyahmccray/.nuget/packages/",
+      "outputPath": "/Users/aaliyahmccray/Documents/C-Sharp-API-SERVER/project4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jonathangiler/.nuget/NuGet/NuGet.Config"
+        "/Users/aaliyahmccray/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
